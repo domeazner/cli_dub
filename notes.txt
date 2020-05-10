@@ -1,0 +1,30 @@
+
+Development
+
+Building CLI Gem Checklist/ Planning
+
+
+1.Plan GEM, imagine interface DONE
+
+2. Start with project structure & scrape test – DONE
+
+3. Start with entry point – run file should be working - DONE
+
+4. force that to build the CLI interface - DONE
+
+5. stub out the interface - IN PROG
+
+6. start making things real - IN PROG
+
+7. discover objects
+
+8. Intense program
+
+
+CLI for dubbed anime, initializing with most popular/new releases
+user types in dub-list
+shows dub list
+
+ 1-35 page results of most popular dubs
+
+then ask what show you would like information on? BIO? STAR RATING? GENRE? or EXIT?
