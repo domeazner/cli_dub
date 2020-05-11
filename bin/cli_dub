@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-#p "HOLLER @ YA BOI"
+require_relative '../lib/cli_dub'
 
 CliDub::CLI.new.call
