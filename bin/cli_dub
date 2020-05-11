@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
-puts "HOLLER @ YA BOI"
+#p "HOLLER @ YA BOI"
+
+CliDub::CLI.new.call

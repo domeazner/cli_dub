@@ -28,3 +28,31 @@ shows dub list
  1-35 page results of most popular dubs
 
 then ask what show you would like information on? BIO? STAR RATING? GENRE? or EXIT?
+
+
+1. flow
+2. classes
+ 2.1 class relationships
+
+UX starts app ask to select genre/score/new then scrape info.
+User is presented with selection
+User is asked for selection of show based on above info and input
+    i. date released
+    ii. score
+    iii. genre/tags
+
+User selects one of three choices
+Presented with results & selections of ordered list based on preference.
+
+User able to drill down to find additional information such as BIO, score, episode numbers
+
+User Can go back to previous menus to amend search
+
+User Repeats selection or exit.
+
+Classes Used:
+CLI - responsible for interaction with User
+ReleaseDate Class - Release date list and obj store for most recent releases Decending.
+Rating Class - Responsible for creating and storing objects based on STAR RATING
+Genre Class - Responsible for creating and storing Genre tags based on genre TAGS 
+Scraper Class - Scraping for data from animeplanet
