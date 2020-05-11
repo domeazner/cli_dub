@@ -1,5 +1,7 @@
 require_relative "./cli_dub/version"
-require_relative "cli_dub/cli"
+require_relative "./cli_dub/cli"
+
+require 'pry'
 
 module CliDub
   class Error < StandardError; end
