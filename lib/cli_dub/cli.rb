@@ -6,7 +6,7 @@ class CliDub::CLI
     def call
         puts "WHAT IS THIS A CLI FOR THE 80's?? Welcome to CLI Dub Tracker" 
         get_recent_dub_list
-        list_recent_dubs
+        #list_recent_dubs
         get_user_selection
         exit_process
     end
@@ -17,49 +17,45 @@ class CliDub::CLI
         # method for getting most recent dubs get_new_releases (descending by year)
         # list all recent releases
 
-        def get_recent_dub_list
+    def get_recent_dub_list
             #to be scraped
-            @asc_date_list = ["Ghost in the Shell: SAC_2045", "Fruits Basket 2nd Season", "Ascendance of a Bookworm: Part II", "Tower of God"]
-        end
+        @asc_date_list = CliDub::User.get_recent_dub_list
+    end
 
-        def list_recent_dubs
+    #def list_recent_dubs
             # list letters, iterate over the array
-            @asc_date_list.each_with_index { |alphabetical, index| 
-            puts "#{index+1}. #{alphabetical}" }
-        end
+    #    @asc_date_list.each_with_index { |alphabetical, index| 
+    #    puts "#{index+1}. #{alphabetical}" }
+    #end
 
-        #def list_recent_dubs
-            # list letters, iterate over the array
-        #    @asc_date_list.each_with_index { |alphabetical, index| 
-        #    puts "#{alphabetical} #{index}." }
-        #end
-
-        def get_user_selection
+    def get_user_selection
             #select from list_recent_dubs to present user with options and looping in order to interface in the recent dubs list
-            input = nil
-            while input != "exit"
-                puts "Please choose your Latest DUB Selection via integer or type return to go back or type exit to quit"
-                input = gets.strip
-                case input
-                when "1"
-                    puts "Drill down info on selection 1"
-                when "2"
-                    puts "DD info on 2"
-                when "return"
-                    list_recent_dubs
-                end
+        input = nil
+        while input != "exit"
+            puts "Please choose your Latest DUB Selection via integer or type return to go back or type exit to quit"
+            input = gets.strip
+            case input
+            when "1"
+                puts "Drill down info on selection 1"
+            when "2"
+                puts "DD info on 2"
+            when "return"
+            get_recent_dub_list
+            else
+                puts "Invalid selection brah."
             end
         end
+    end
 
         #exit method
 
-        def exit_process
-            puts "See ya later fellow!"
-        end
+    def exit_process
+        puts "See ya later fellow!"
+    end
 
-        def list_user_selection
+    def list_user_selection
             #selects user selection
-        end
+    end
 
         def user_selection_details
             #displays selected info + additional drill down

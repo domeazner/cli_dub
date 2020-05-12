@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+
+#DEFINED EXECUTION POINT
 #(telling bash terminal saying ruby is going to be executed and dont have to run ruby/run  etc.)
 
 #when user calls app runfile/Executable
