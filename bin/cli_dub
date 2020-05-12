@@ -1,5 +1,9 @@
 #!/usr/bin/env ruby
 
+#(telling bash terminal saying ruby is going to be executed and dont have to run ruby/run  etc.)
+
+#when user calls app runfile/Executable
+
 require_relative '../lib/cli_dub'
 
 CliDub::CLI.new.call

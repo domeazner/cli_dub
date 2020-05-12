@@ -1,3 +1,5 @@
+#environment file
+
 require_relative "./cli_dub/version"
 require_relative "./cli_dub/cli"
 
