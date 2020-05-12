@@ -4,9 +4,11 @@
 class CliDub::CLI 
     # testing method
     def call
-        puts "Welcome to CLI Dub Tracker" 
+        puts "WHAT IS THIS A CLI FOR THE 80's?? Welcome to CLI Dub Tracker" 
         get_recent_dub_list
         list_recent_dubs
+        get_user_selection
+        exit_process
     end
 
         #scrape data to return initial dub list (most recent descending) get_recent_dub_list
@@ -33,7 +35,26 @@ class CliDub::CLI
         #end
 
         def get_user_selection
-            #select from list_recent_dubs
+            #select from list_recent_dubs to present user with options and looping in order to interface in the recent dubs list
+            input = nil
+            while input != "exit"
+                puts "Please choose your Latest DUB Selection via integer or type return to go back or type exit to quit"
+                input = gets.strip
+                case input
+                when "1"
+                    puts "Drill down info on selection 1"
+                when "2"
+                    puts "DD info on 2"
+                when "return"
+                    list_recent_dubs
+                end
+            end
+        end
+
+        #exit method
+
+        def exit_process
+            puts "See ya later fellow!"
         end
 
         def list_user_selection
